@@ -94,7 +94,7 @@ nav ul li a
 nav #flechita_nav a
 {
 	background: #22BCE0;
-	padding: 0.5em;
+	padding: 0.5em 0;
 	text-decoration: none;
 }
 nav #flechita_nav a:after
@@ -102,19 +102,35 @@ nav #flechita_nav a:after
 	content: "\e000";
 	font-family: "icomoon";
 	font-size: 0.7em;
+	opacity: 0.6;
 }
 
 nav #publicar_nav
 {
+	background: #DD4F24;
 	float: right;
 	margin-right: 0;
+	padding-right: 1em;
+	position: relative;
+}
+nav #publicar_nav:after
+{
+	color: rgba(255,255,255,0.5);
+	content: "\e003";
+	font-family: "icomoon";
+	font-size: 1.8em;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 nav #publicar_nav a
 {
-	background: #DD4F24;
+	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
+
+
 #contenido
 {
 	margin: 1em;
@@ -132,6 +148,16 @@ nav #publicar_nav a
 {
 	color: #7A7A7A;
 	font-size: 0.9em;
+}
+#contenido .item .datos_item .guardar_item
+{
+	text-decoration: none;
+}
+#contenido .item .datos_item .guardar_item:after
+{
+	color: #FC5;
+	content: "\e004";
+	font-family: "icomoon";
 }
 #contenido .item .imagen_item
 {
